@@ -13,6 +13,8 @@ import torch
 from torchvision import transforms
 from PIL import Image
 from utils.model import ResNet9
+from flask_cors import CORS
+
 
 # ==============================================================================================
 
@@ -128,6 +130,9 @@ def predict_image(img, model=disease_model):
 
 
 app = Flask(__name__)
+
+app = Flask(_name_)
+CORS(app)
 
 # render home page - Removed
 
