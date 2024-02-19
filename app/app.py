@@ -131,7 +131,6 @@ def predict_image(img, model=disease_model):
 
 app = Flask(__name__)
 
-app = Flask(_name_)
 CORS(app)
 
 # render home page - Removed
