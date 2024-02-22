@@ -130,8 +130,8 @@ def predict_image(img, model=disease_model):
 
 
 app = Flask(__name__)
-
-CORS(app)
+# cors middleware 
+CORS(app, resources={r"/*": {"origins": ["https://agrinovate.vercel.app", "http://localhost:3000"]}})
 
 # render home page - Removed
 
